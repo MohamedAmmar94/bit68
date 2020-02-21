@@ -18,7 +18,7 @@
 					
 					<form id="getweather" style="width: 100%;height: 130px;">
 					{{ csrf_field() }}
-						<input type="text" class="form-control" placeholder="type city" name="city">
+						<input type="text" class="form-control" placeholder="type city" name="city" required>
 						<input type="submit" class="btn btn-primary" style="margin: 20px;float: right;
 ">
 					</form>
