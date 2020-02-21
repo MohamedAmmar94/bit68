@@ -1,0 +1,99 @@
+{
+	"info": {
+		"_postman_id": "7db982f5-ca46-405d-913f-3af3b32f3cef",
+		"name": "bit68",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/login",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getweather",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjRhMmZlZDg4Mzg3OWJjZDIwYTc1N2MzNWFhM2M5OTcwZTBlMjY2ZTk5YTkwYzQ2MDhmZWQ4MjIwNjYzYjFmZjhlYzE3ZWZlNDMwNTY3OGY5In0.eyJhdWQiOiIxIiwianRpIjoiNGEyZmVkODgzODc5YmNkMjBhNzU3YzM1YWEzYzk5NzBlMGUyNjZlOTlhOTBjNDYwOGZlZDgyMjA2NjNiMWZmOGVjMTdlZmU0MzA1Njc4ZjkiLCJpYXQiOjE1ODIzMDk0NDQsIm5iZiI6MTU4MjMwOTQ0NCwiZXhwIjoxNjEzOTMxODQ0LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.kO0evS2v0LBC9vHvn3RSCr6bRlmX4EFo-yXvPXzYRB2-D7eDS5g93gAWe_rvMWHu4fK0Ku3ZhAusi1SllkEcjZbqp8qTUNEt6fd6ar6fmWX2JazfGzG_4LkuS7xKA0CRiulfL4dI-mj6g64_Y0jyN7kJFB1233WkbydpN6pg9gF50ni_q6cjVk6wEN2RUu5QuQuVTcUWLlUfRUWqILZQgVytdDuyIw8n9AroKIAUw3EHDR6RTPBmrkCPLVnvp6W2YQqcJYmylahCnT3eALhyfdzgo0SbdfBXfwrUEVT4_P52nOpG4yEy6harpcoxMIPYTKHtyVqUG_8uoSbrDN-oeI0Z9RuQ3gWA31MOF7-Gj4aqZ4A5Zepkqz5Z6x6AfKQBdcjc9xuDITT9TILnOKJeGHhbUGiKyeRDBGVGjK3Ku3h2uMk5r48FeK20bZPuNDmqy8lFqpOrcaI3dsTZLxnS7MSKBae9DV_vCMEz-8k7L2Uyw0Gv0EtQSreqJe5K3zRM9mjJyJWzWYNF1Kj1s9eBLGFXb__pbEnG9EegSintD7aWWLodkQk7HvzT3T3VaTY1HJZor9P21t0BDYfZ7PDkn_-BLRJXRvan8XB_-LnhprcwQw7OabynhhSzJXxuCyMDvD1mMUY6NWIMVKICUJqRojiNyvdU2EqBjJedVM0HtT4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "city",
+							"value": "tanta",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8000/api/getweather",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"getweather"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api.openweathermap.org/data/2.5/weather?q=tanta&appid=b2be7f6bf4261e1e8bbf999cb315535d\n",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "api.openweathermap.org/data/2.5/weather?q=tanta&appid=b2be7f6bf4261e1e8bbf999cb315535d\n",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"weather"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "tanta"
+						},
+						{
+							"key": "appid",
+							"value": "b2be7f6bf4261e1e8bbf999cb315535d\n"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
